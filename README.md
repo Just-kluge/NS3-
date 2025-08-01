@@ -61,6 +61,6 @@ int main() {
 
 3).参考代码: 下载文件并解压到本地https://github.com/wany16/ns3-ecn-sharp      
             (1)ecmp:ns3-ecn-sharp中搜索ipv4-global-routing.cc，里面的lookupglobal函数就是实现ecmp关键实现部分。  
-           （2）letflow:代码实现在src\letflow-routing\model\ipv4-letflow-routing.cc.   
+            (2)letflow:代码实现在src\letflow-routing\model\ipv4-letflow-routing.cc.   
             (3)conga:代码实现在src\conga-routing\model\ipv4-conga-routing.cc
 
