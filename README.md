@@ -66,3 +66,8 @@ int main() {
             (4)ecmp测试例子：https://github.com/mkheirkhah/ecmp/blob/development/scratch/ecmp.cc
 
 4).显示容器内文件内容到控制台：cat +文件路径（如cat scratch/scratch-simulator.cc）
+
+5）.修改容器内代码（临时，退出容器则恢复原状）：
+cat > scratch/first.cc <<EOF
+ // 在此粘贴新代码
+EOF
