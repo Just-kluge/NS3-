@@ -65,3 +65,4 @@ int main() {
             (3)conga:代码实现在src\conga-routing\model\ipv4-conga-routing.cc。
             (4)ecmp测试例子：https://github.com/mkheirkhah/ecmp/blob/development/scratch/ecmp.cc
 
+4).显示容器内文件内容到控制台：cat +文件路径（如cat scratch/scratch-simulator.cc）
