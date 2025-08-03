@@ -14,6 +14,7 @@
 
 
 2.使用过程中遇到的问题
+
 1）.如何在终端实现编码，可行例子示例：
 echo '
 #include "ns3/core-module.h"
@@ -70,4 +71,25 @@ int main() {
 5）.修改容器内代码（临时，退出容器则恢复原状）：
 cat > scratch/first.cc <<EOF
  // 在此粘贴新代码
+EOF
+     
+例子：cat > scratch/scratch-simulator.cc <<EOF
+
+#include "ns3/core-module.h"
+#include "ns3/log.h"
+using namespace ns3;
+
+NS_LOG_COMPONENT_DEFINE ("ScratchSimulator");
+
+int 
+main (int argc, char *argv[])
+{LogComponentEnable("ScratchSimulator", LOG_LEVEL_ALL);
+  std::cout<<"Scratch Simulator"<<std::endl; 
+
+ std::cout<<"1"<<std::endl; NS_LOG_UNCOND ("Scratch Simulator Finish");
+
+  Simulator::Run ();
+  Simulator::Destroy ();
+} 
+
 EOF
