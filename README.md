@@ -93,3 +93,5 @@ main (int argc, char *argv[])
 } 
 
 EOF
+6).日志功能失效：./waf configure --enable-examples --enable-tests --build-profile=debug(重新从源码编译NS-3，确保启用日志，缺点：每次进入容器都要这么操作，费时间(4m41.244s)).
+
