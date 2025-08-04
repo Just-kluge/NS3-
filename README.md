@@ -97,5 +97,8 @@ main (int argc, char *argv[])
 
 EOF
 
-6).日志功能失效：./waf configure --enable-examples --enable-tests --build-profile=debug(重新从源码编译NS-3，确保启用日志，缺点：每次进入容器都要这么操作，费时间(4m41.244s)).
+6).日志功能失效：./waf configure --enable-examples --enable-tests --build-profile=debug(重新从源码编译NS-3，
+确保启用日志，缺点：每次进入容器都要这么操作，费时间(4m41.244s)).
+
+7).拷贝容器内ns3-ecn-sharp目录下内容至宿主机目录/home/xiale/ns3：docker cp ns3-simulator:/root/ns3-ecn-sharp /home/xiale/ns3
 
