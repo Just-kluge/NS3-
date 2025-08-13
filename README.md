@@ -10,7 +10,7 @@
 4）.拉取ns3镜像：终端输入sudo docker pull docker.1ms.run/snowzjx/ns3-ecn-sharp:optimized（ 其中docker.1ms.run为镜像，不可用就进行更换，好用镜像地址参考：https://blog.csdn.net/qq_73162098/article/details/145014490?share_token=6e589c77-deea-47a7-b0c4-3d93e1a0cb8a）
 
 5）.终端输入sudo docker run -itd --name ns3-simulator docker.1ms.run/snowzjx/ns3-ecn-sharp:optimized bash -c "cd ~/ns3-ecn-sharp && tail -f /dev/null"(上面镜像更换后这个也要换)，再输入电脑用户密码即可创建容器。之后键入sudo docker update --restart=unless-stopped ns3-simulator
-设置容器开机自启动。后面加入该容器则用sudo docker exec -it ns3-simulator bash -c "cd ~/ns3-ecn-sharp && exec bash"
+设置容器开机自启动。后面每次加入该容器则用sudo docker exec -it ns3-simulator bash -c "cd ~/ns3-ecn-sharp && exec bash"
 
 2.使用过程中遇到的问题
 
