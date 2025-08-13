@@ -68,4 +68,4 @@ EOF
 7).拷贝容器内ns3-ecn-sharp目录下内容至宿主机目录/home/xiale/ns3：docker cp ns3-simulator:/root/ns3-ecn-sharp /home/xiale/ns3
 
 8).下载netanim:终端输入wget https://www.nsnam.org/release/ns-allinone-3.29.tar.bz2，解压然后请教deepseek
-9).把名称为ns3-simulator的容器目录/root/ns3-ecn-sharp下的ecmp.xml 拷贝到宿主机/home/xiale/ns3目录下  :docker cp ns3-simulator:/root/ns3-ecn-sharp/ecmp.xml /home/xiale/ns3
+
