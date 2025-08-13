@@ -36,7 +36,7 @@ int main() {
 
 4).显示容器内文件内容到控制台：cat +文件路径（如cat scratch/scratch-simulator.cc）
 
-5）.修改容器内代码（临时，退出容器则恢复原状）：
+5）.修改容器内代码：
 cat > scratch/first.cc <<EOF
  // 在此粘贴新代码
 EOF
